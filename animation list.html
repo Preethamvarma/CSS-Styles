@@ -1,0 +1,70 @@
+<html>
+<head>
+<title></title>
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+body
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Poppins', sans-serif;
+}
+ul
+{
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+ul li
+{
+	list-style: none;
+	margin: 0;
+	font-size: 4em;
+}
+ul li a
+{
+	position: relative;
+	color: #ddd;
+	text-decoration: none;
+	font-weight: 700;
+}
+ul li a:before
+{
+	content: attr(data-text);
+	position: absolute;
+	top: -2px;
+	width: 100%;
+	color: #262626;
+	overflow: hidden;
+	white-space: nowrap;
+	transition: 0.5s ease-in-out;
+}
+ul:hover li a:before
+{
+	width: 0;
+}
+ul li:hover a:before
+{
+	width: 100%;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+	<li><a href="#" data-text="Home">Home</a></li>
+	<li><a href="#" data-text="About">About</a></li>
+	<li><a href="#" data-text="Services">Services</a></li>
+	<li><a href="#" data-text="Menu">Menu</a></li>
+	<li><a href="#" data-text="Our Team">Our Team</a></li>
+	<li><a href="#" data-text="Contact Us">Contact Us</a></li>
+</ul>
+
+</body>
+</html>

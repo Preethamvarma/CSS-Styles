@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>Dropdown</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+body
+{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	font-family: 'Poppins', sans-serif;
+	background: brown;
+	background-size: cover;
+	background-position: center;
+}
+header
+{
+	width: 100%;
+	background: #000;
+}
+header ul
+{
+	display: flex;
+	justify-content: flex-end;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+}
+header ul li
+{
+	list-style: none;
+	position: relative;
+	padding: 10px 0;
+	transition: 0.5s;
+	box-sizing: border-box;
+	border-right: 1px solid rgba(255,255,255,.2);
+}
+header ul li:hover
+{
+	background: #2196f3;
+}
+header ul li:last-child
+{
+	border-right: none;
+}
+header ul li a
+{
+	text-decoration: none;
+	padding: 0 20px;
+	color: #fff;
+}
+header ul li ul
+{
+	position: absolute;
+	top: 44px;
+	left: 0;
+	background: #000;
+	display: block;
+	width: 200px;
+	transition: 0.5s;
+	opacity: 0;
+	visibility: hidden;
+}
+header ul li:hover ul
+{
+	opacity: 1;
+	visibility: visible;
+}
+header ul li ul li
+{
+	border-right: none;
+	border-bottom: 1px solid rgba(255,255,255,.2);
+}
+@media (max-width: 768px)
+{
+	header ul
+	{
+		display: block;
+	}
+	header ul li
+	{
+		display: block;
+	}
+	header ul li ul
+	{
+		width: 100%;
+		z-index: 1;
+	}
+}
+
+</style>
+</head>
+<body>
+
+<header>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Services</a></li>
+		<li><a href="#">Dropdown</a>
+			<ul>
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Team</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</header>
+
+</body>
+</html>
